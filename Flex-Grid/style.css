@@ -8,15 +8,7 @@ header{
     
     display:flex;
     justify-content: center;
-     display: inline-block;
-            text-align: center;
-            text-decoration: none;
-            padding: 20px 0;
-            color: hsl(0, 0%, 95%);
-            background-color: hsl(179, 100%, 13%);
-            bottom: 15px;
-            right: 15px;      
-            box-shadow: 0 0 .3em hsl(184, 100%, 22%);    
+     
 }
 
         body {
