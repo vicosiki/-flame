@@ -1,165 +1,162 @@
-@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+ @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
 
+        * {
+            box-sizing: border-box;
+        }
 
-header{
-    font-size: 20px;
-    display:flex;
-    justify-content: center;
-}
-body {
-  color: white;
-  font-size: 15px;
-  font-weight:400;
-  font-family: "Lexend Deca";
-}
+        body {
+            margin: 0;
+            color: #FDF9F8;
+            font-size: 15px;
+            background-color: hsl(0, 0%, 95%);
+            font-family: 'Lexend Deca';
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: auto;
+            position: relative;
+        }
 
-P {
-  color:hsla(0, 0%, 100%, 0.75);
-  
-}
+        p {
+            color: hsla(0, 0%, 100%, 0.75);
+            font-size: 0.74rem;
+            line-height: 1.3rem;
+            margin-top: 0px;
+            margin-bottom: 3rem;
+        }
 
-h1 {
-  color: hsl(0, 0%, 95%);
-  font-family: "Big Shoulders Display";
-  
-}
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        a {
+            color: hsl(0, 0%, 95%);
+        }
 
-.flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;  
-  /*background-color: hsl(0, 0%, 95%);*/
-  width: 50%;
-  margin: auto;
-  height: 100vh;
-  
-}
+        .rounded-circle {
+            border-radius: 50%;
+        }
 
-.flex-container > div {
-  padding: 25px;
-  font-size: 15px;
-     
-}
+        .grid_link {
+            height: 60px;
+            width: 60px;
+            position: fixed;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            padding: 20px 0;
+            color: hsl(0, 0%, 95%);
+            background-color: hsl(179, 100%, 13%);
+            bottom: 15px;
+            right: 15px;      
+            box-shadow: 0 0 .3em hsl(184, 100%, 22%);     
+        }
 
-.sedans {
- 
-  background-color: hsl(31, 77%, 52%);
-  border-top-left-radius:5px;
-  border-bottom-left-radius:5px;
-  
-}
+        a.git_link{
+                bottom: 80px;
+                background-color: hsl(31, 77%, 52%);
+        }
 
-.suvs {
- 
-  background-color: hsl(184, 100%, 22%);
-   
-}
+        .section>h2 {
+            text-transform: uppercase;
+            font-family: 'Big Shoulders Display';
+            font-weight: 700;
+            font-size: 2rem;
+        }
 
-.lux {
- 
-  background-color: hsl(179, 100%, 13%);
-  border-top-right-radius:5px;
-  border-bottom-right-radius:5px;
-  
-}
+        .section>a {
+            display: block;
+            text-transform: capitalize;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: hsl(0, 0%, 95%);
+        }
 
-.button {
-background-color: hsl(0, 0%, 95%);
- place-items: center;
- border: none;
- padding:20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  border-radius:25px;
-  cursor: pointer;
-  
-}
+        .section>a:hover {
+            color: hsl(0, 0%, 95%);
+            border: 2px solid hsl(0, 0%, 95%);
+            background-color: transparent;
+        }
 
+        .main {
+            width: 55%;
+            margin: 6.2rem 0;
+            display: flex;
+            flex-flow: row wrap;
+        }
 
-.sedansbt {
-  color: hsl(31, 77%, 52%);
-}
+        .section {
+            padding: 2.6rem;
+            flex: 1 33.33%;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: flex-start;
+            justify-content: center;
+        }
 
+        .rounded-pill {
+            border-radius: 2rem;
+        }
 
-.suvbt {
-  color: hsl(184, 100%, 22%);
-}
+        .box1 {
+            background-color: hsl(31, 77%, 52%);
+        }
 
-.luxbt {
-  color: hsl(179, 100%, 13%);
-}
+        .box1>a {
+            color: hsl(31, 77%, 52%);
+        }
 
-.grid-container {
-  display: grid;
-  row-gap: 50px;
-  grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px;
-}
+        .box2 {
+            background-color: hsl(184, 100%, 22%);
+        }
 
-*{
-    box-sizing: border-box;
-}
-header{
-    font-size: 20px;
-    display:flex;
-    justify-content: center;
-}
-a{
-    background:blue;
-    text-align:center;
-    padding:20px;
-    color:white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: auto;
-}
-main{
-    padding:40px 50px;
-    display:grid;
-    grid-template-columns: repeat(7,60px);
-    grid-template-rows: repeat(5,60px);
-    grid-gap: 10px;
-    justify-content:center;
-    margin:20px 10px;
-}
-.one{
-    background:#ffbb00;
-    grid-column: 1/span 5;
-    grid-row:1/span 2;
-}
-.two{
-    background:#f96f24;
-    grid-column: 6/span 2;
-    grid-row:1/span 2;
-}
-.three{
-    background:green;
-    grid-column: 1/span 3;
-    grid-row:3/span 3;
-}
-.four{
-    background:blue;
-    grid-column: 4/span 4;
-    grid-row:3;
-  
-}
-.five{
-    background:#ff00ae;
-    grid-column: 4/span 4;
-    grid-row:4 / span 2;
-  
-  
-   
-@media screen and (max-width:948px){
-    .flex-container{
-        font-family: "Lexend Deca" ;
-        font-size: 15px;
-        display:flex;
-        place-items: center center;
-        padding:30px;
-        flex-direction: column;
-    }
-    
+        .box2>a {
+            color: hsl(184, 100%, 22%);
+        }
+
+        .box3 {
+            background-color: hsl(179, 100%, 13%);
+        }
+
+        .box3>a {
+            color: hsl(179, 100%, 13%);
+        }
+
+        @media only screen and (max-width: 767px) {
+            .main {
+                width: 90%;
+                margin: 3.2rem 0;
+            }
+
+            .section {
+                flex: 1 100%;
+            }
+
+            .grid_link{
+                bottom: 30px;
+                right: 30px;
+                background-color: hsla(179, 100%, 13%, .7);
+                box-shadow: 0 0 .3em hsl(0, 0%, 95%);
+            }
+
+            a.git_link{
+                bottom: 100px;
+            }
+
+        }
+
+        @media only screen and (min-width: 847px) and (max-width: 1440px) {
+
+            .rounded-lg-start {
+                border-top-left-radius: 0.4rem;
+                border-bottom-left-radius: 0.4rem;
+            }
+
+            .rounded-lg-end {
+                border-top-right-radius: 0.4rem;
+                border-bottom-right-radius: 0.4rem;
+            }
+        }
